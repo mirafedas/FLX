@@ -1,0 +1,177 @@
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #efefef; }
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+.top-wrapper {
+  background-image: url("../img/header_background_v2.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.logo img {
+  width: 230px;
+  height: 150px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  position: absolute;
+  right: 100px;
+  top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  nav a {
+    color: #fa5d28;
+    text-decoration: none; }
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fa5d28;
+  text-transform: uppercase;
+  font-size: 26px; }
+header section a {
+  position: absolute;
+  top: 60%;
+  right: 45%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px; }
+
+.btn, .btn-top {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #0400ac;
+  border: 1px solid #0400ac;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; }
+  .toolbar input {
+    height: 30px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 1px solid lightgrey; }
+
+#list h1 {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #708090; }
+
+#about div h1 {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase; }
+#about div img {
+  width: 100%; }
+
+article {
+  display: flex;
+  background-color: white;
+  max-height: 300px;
+  margin-bottom: 20px;
+  position: relative; }
+  article img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px; }
+  article div button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+
+.post-description {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: grey;
+  font-size: 18px; }
+
+.post {
+  margin-right: 10px;
+  margin-left: 10px; }
+  .post h3 {
+    text-transform: uppercase;
+    color: #708090;
+    margin: 5px; }
+  .post p {
+    margin-top: 5px; }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey; }
+
+#contact h4, #contact h1 {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  color: grey; }
+#contact h1 {
+  margin-top: 50px;
+  margin-bottom: 0; }
+#contact h4 {
+  margin: 0; }
+
+.full-name {
+  display: flex; }
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1; }
+  .input-label input {
+    width: 99%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid lightgrey; }
+  .input-label label {
+    font-size: 12px;
+    color: #708090;
+    margin-top: 20px;
+    margin-bottom: 5px; }
+
+.input-label:first-child {
+  margin-right: 10px; }
+
+#subject {
+  width: 99%;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid lightgrey; }
+
+#send {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px; }
+
+footer {
+  margin-left: 10px;
+  font-size: 11px;
+  color: grey; }

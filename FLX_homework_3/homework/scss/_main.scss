@@ -1,0 +1,242 @@
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin input-border-background {
+    background-color: transparent;
+    border: 1px solid lightgrey;
+}
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $body-background-color;
+}
+
+.main-wrapper {
+    @include flex-column;
+    font-family: $font-family;    
+}
+
+.top-wrapper {
+    background-image: $header-background;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    img {
+        width: 230px;
+        height: 150px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    a {
+        color: $nav-and-top-header-color;
+        text-decoration: none;
+    }
+}
+
+header {
+    h1 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: $nav-and-top-header-color;
+        text-transform: uppercase;
+        font-size: $font-size-big;
+    }
+
+    section {
+        a {
+            position: absolute;
+            top: 60%;
+            right: 45%;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 45px;
+        }
+    }
+}
+
+.btn, .btn-top {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: $buttons-color;
+    border: 1px solid $buttons-color;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    @include flex-column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%
+}
+
+.toolbar {
+    @include flex-end;
+
+    input {
+        height: 30px;
+        padding-left: 20px;
+        @include input-border-background;
+    }
+}
+
+#list {
+    h1 {
+        @include flex-end;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $post-header-color;
+    }
+}
+
+#about {
+    div {
+        h1 {
+            @include flex-end;
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+article {
+    display: flex;
+    background-color: $article-background-color;
+    max-height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 10px;
+    }
+
+    div {
+        button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+}
+
+.post-description {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: $post-description-color;
+    font-size: $font-size-small;
+}
+
+.post {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    h3 {
+        text-transform: uppercase;
+        color: $post-header-color;
+        margin: 5px;
+    }
+
+    p {
+        margin-top: 5px;
+    }
+}
+
+.about {
+    @include flex-column;
+    align-items: center;
+    color: $contact-and-about-color;
+}
+
+#contact {
+    h4, h1 {
+    @include flex-end;
+    text-transform: uppercase;
+    color: $contact-and-about-color;
+    }
+
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 0
+    }
+
+    h4 {
+        margin: 0;
+    }
+}
+
+.full-name {
+    display: flex;
+}
+
+.input-label {
+    @include flex-column;
+    align-items: flex-end;
+    flex: 1;
+
+    input {
+        width: 99%;
+        height: 30px;
+        @include input-border-background;
+        }
+    
+    label {
+        font-size: 12px;
+        color: $input-label-color;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+.input-label:first-child {
+    margin-right: 10px;
+}
+
+#subject {
+        width: 99%;
+        height: 150px;
+        @include input-border-background;
+}
+
+#send {
+    @include flex-end;
+    margin-top: 10px;
+}
+
+footer {
+    margin-left: 10px;
+    font-size: 11px;
+    color: $copyright-color;
+}
