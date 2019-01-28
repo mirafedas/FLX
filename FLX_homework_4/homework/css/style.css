@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+}
+
+.main-wrapper {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em; 
+}
+
+header {
+    min-height: 400px;
+    background-image: url("../img/sample2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 25px;
+    color: #FFFFFF;
+}
+
+.logo-text {
+    font-size: 10px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-nav > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 20px;
+    letter-spacing: normal; 
+}
+
+.top-headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.top-headers > h1 {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.top-headers > p {
+    margin-top: 0;
+    font-size: 10px;
+    letter-spacing: normal; 
+}
+
+.bigger-font {
+    font-size: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > button {
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: normal; 
+    padding: 25px;
+    background-color: #E8E8E8;
+    padding-top: 0;
+}
+
+.triangle {
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to left bottom, black 0%, black 50%, transparent 50%);
+    width: 100%;
+    height: 160px;
+}
+
+main > p:first-of-type {
+    display: flex;
+    width: 50%;
+    align-self: flex-end;
+    font-size: 10px;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+main > p, strong {
+    width: 50%;
+    font-size: 14px;
+}
+
+main > h3 {
+    font-weight: normal;
+    align-self: center;
+    padding-top: 20px;
+}
+
+main > h3 > strong {
+    font-size: 17px;
+}
+
+.articles {
+    display: flex;
+}
+
+.articles > div {
+    margin-left: 10px;
+}
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    font-size: 10px;
+}
+
+.articles-list > p {
+    text-align: center;
+}
+
+.office-photo {
+    width: 50%;
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.office-photo > img {
+    width: 100%;
+    height: auto;
+}
+
+.likes {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    width: 45px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 14px;
+} 
+
+.img-info {
+    color: #FFFFFF;
+    position: absolute;
+    top: 175px;
+    left: 2%;
+    font-size: 10px;
+}
+
+.img-info > strong {
+    font-size: 10px;
+}
+
+.explore {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.explore > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    letter-spacing: normal; 
+    width: 200px;
+    box-shadow: 0 2px 4px #9E9E9E;
+    padding: 15px;
+}
+
+.explore > div > button {
+    margin-top: 15px;
+    color: #FFFFFF;
+    background-color: #097774;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    font-weight: bold;
+}
+
+.subscribe {
+    background-color: #E8E8E8;
+    letter-spacing: normal;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: flex-end;
+    align-content: baseline;
+}
+
+.subscribe-form > p, input {
+    margin-right: 10px;
+}
+
+.subscribe-form > p {
+    font-size: 16px;
+}
+
+.subscribe-form > input {
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    background: #E8E8E8;
+    padding-left: 10px;
+    width: 90px;
+    font-size: 11px;
+}
+
+.subscribe-form > button {
+    color: #FFFFFF;
+    background-color: #097774;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: #F3F3F3;
+    letter-spacing: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer > div {
+    margin: 10px;
+    width: 25%;
+}
+
+footer > div > p {
+    font-size: 12px;
+    color: #9E9E9E;
+}
+
+footer > div > input {
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    background: #F3F3F3;
+    padding-left: 10px;
+    width: 90px;
+    font-size: 11px;
+}
+
+footer > div > button {
+    color: #FFFFFF;
+    background-color: #097774;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.post-time {
+    color: #E8E8E8;
+}
+
+.footer-nav {
+    display: flex;
+    background-color: #F3F3F3;
+    letter-spacing: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #9E9E9E;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #000000;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.footer-links > a:last-child {
+    padding-right: 0;
+}
+
+.horizontal-line {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.horizontal-line > div {
+    border-top: 1px solid #E8E8E8;
+    margin: 0 20px;
+}
