@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 const rootNode = document.getElementById('root');
 
 let todoItems = localStorage.todoItems;
@@ -104,10 +105,8 @@ const compare = (a,b) => {
 const markAsDone = (e) => {
     const itemToMarkAsDone = e.target.parentElement.parentElement;
     findElByID(itemToMarkAsDone.id);
-
     clickedEl.isDone = !clickedEl.isDone;
     localStorage.todoItems = JSON.stringify(todoItems);
-    console.log(clickedEl);
     const listWrapper = document.getElementById('listWrapper');
     listWrapper.innerHTML = null;
     renderListItems();
@@ -126,9 +125,7 @@ const renderListItems = () => {
             description.setAttribute('class', 'description');
             description.innerText = el.description;
             description.addEventListener('click', redirectToModify);
-
             
-
             const checkbox = document.createElement('div');
             checkbox.setAttribute('class', 'checkbox');
             if (el.isDone) {
@@ -151,6 +148,3 @@ const renderListItems = () => {
     }
 }
 renderListItems();
-
-
-// rootNode.appendChild(/* Append your list item node*/);
